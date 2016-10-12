@@ -8,19 +8,23 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+
+" Add plugins !
 Plugin 'gmoe/vim-espresso'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'scrooloose/nerdtree'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-" -------------------- VUNDLE END ------------------------------------------------------
-
 " Theme options
 set t_Co=256
 set background=dark
 colorscheme espresso
+" Just a tad darker...
+hi Normal guibg=#1c1c1c ctermbg=234
+hi Comment guibg=#1c1c1c ctermbg=234
 
 " Tab indentation
 set tabstop=4       " The width of a TAB is set to 4.
